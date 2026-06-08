@@ -2,12 +2,14 @@
 
 ## Project overview
 
-**gptest** is a documentation-only repository for Linear issue **DXV-89**. It contains a draft Standard Operating Procedure (SOP) for one-off internal donor data requests. There is no application source code, build tooling, or runnable services.
+**gptest** is a documentation-only repository for RMHCK Linear planning artifacts. It contains draft SOPs and infrastructure plans. There is no application source code, build tooling, or runnable services.
 
 | File | Purpose |
 |------|---------|
-| `README.md` | Entry point; links to the SOP draft |
-| `DXV-89_sop_draft.md` | Full SOP draft with intake workflow, QA checklist, and Linear issue update templates |
+| `README.md` | Entry point; links to issue artifacts |
+| `DXV-89_sop_draft.md` | SOP draft for one-off internal donor data requests |
+| `RMH-144_n8n_fedora_plan.md` | n8n on Fedora deployment plan, threat/ops notes, approval gates |
+| `docs/n8n/` | Reference Compose and config templates for RMH-144 (planning only) |
 
 ## Cursor Cloud specific instructions
 
@@ -24,8 +26,8 @@ There are no configured lint, test, or build commands. To sanity-check documenta
 There is no application. The core artifact is the SOP markdown file. A successful workflow means:
 
 1. `git status` shows a clean or expected working tree.
-2. `README.md` and `DXV-89_sop_draft.md` are present and readable.
-3. The SOP contains expected sections: Purpose, Scope, Intake workflow, QA checklist, Linear templates, and the explicit stop point.
+2. `README.md` and issue artifact markdown files are present and readable.
+3. Each artifact contains expected sections and an explicit stop point before production execution or credential use.
 
 ### External systems (not in this repo)
 

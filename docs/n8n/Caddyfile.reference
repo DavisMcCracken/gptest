@@ -1,0 +1,10 @@
+# Reference only — requires TLS cert strategy and basic auth before production (gate A2).
+
+:443 {
+  reverse_proxy n8n:5678
+
+  # Uncomment and configure after gate A2:
+  # basicauth /* {
+  #   admin JDJhJDE0JGF...bcrypt_hash...
+  # }
+}
